@@ -4,7 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var bodyParser = require('JzsCommon');
 
 var routes = require('./routes/index');
 var motion = require('./routes/motion');
@@ -60,3 +59,6 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+//start sentry
+var StraySentry = require('./StraySentry');
